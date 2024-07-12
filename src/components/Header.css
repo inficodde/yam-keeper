@@ -1,0 +1,14 @@
+.header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  flex: 1 0 auto;
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.temperature {
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 0 auto;
+}
+
+@media (max-width: 600px) {
+  .temperature {
+    padding: 10px;
+  }
+}
