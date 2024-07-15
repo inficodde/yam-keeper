@@ -1,0 +1,13 @@
+.weather-card {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+@media (max-width: 800px) {
+  .weather-card {
+    padding: 10px;
+  }
+}

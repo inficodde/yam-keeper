@@ -1,38 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content.desktop {
+  margin-left: 60px; /* Adjust to the sidebar width */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.right-column > * {
+  flex: 1;
+}
+
+.bottom-row {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding-bottom: 60px; /* Adjust to the bottom bar height */
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .right-column {
+    flex-direction: column;
+  }
+
+  .bottom-row {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 20px;
+  z-index: 1000;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 40px; /* Increased margin */
+  cursor: pointer;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottom-bar-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
 }

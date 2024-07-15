@@ -1,0 +1,22 @@
+.past-days {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.past-days ul {
+  list-style: none;
+  padding: 0;
+}
+
+.past-days li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .past-days {
+    padding: 10px;
+  }
+}

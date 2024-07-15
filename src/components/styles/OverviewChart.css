@@ -1,0 +1,40 @@
+.overview-chart {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  width: 100%;
+}
+
+.chart-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch-button {
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.switch-button.active {
+  background-color: #4a90e2;
+}
+
+@media (max-width: 800px) {
+  .overview-chart {
+    padding: 10px;
+  }
+
+  .switch-button {
+    padding: 5px 10px;
+    margin: 0 2px;
+  }
+}
+  

@@ -1,0 +1,19 @@
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottom-bar-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+}
